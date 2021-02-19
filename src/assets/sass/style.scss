@@ -1,0 +1,69 @@
+@import './fonts/fonts';
+
+:root {
+  --primary: #f38181;
+  --secondary: #fce38a;
+  --accent-one: #eaffd0;
+  --accent-two: #95e1d3;
+  --white: #fffbfb;
+  --black: #030000;
+  --vh: calc(100vh * 0.01);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: 'montseraat';
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'racing-sans';
+  color: inherit;
+  letter-spacing: 1pt;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100 * var(--vh));
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--accent-two);
+    color: var(--black);
+  }
+}

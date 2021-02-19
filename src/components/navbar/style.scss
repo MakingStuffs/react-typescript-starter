@@ -1,0 +1,35 @@
+nav.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-logo,
+  .navbar-links {
+    align-self: center;
+  }
+
+  .navbar-logo {
+    max-width: 150px;
+    max-height: 50px;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .navbar-links {
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: inline-block;
+    }
+    a {
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
